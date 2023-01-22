@@ -1,0 +1,6 @@
+teste teste
+teste
+appendFile
+appendFileappend síncrono
+Append com Promises
+appendFile

@@ -1,0 +1,11 @@
+
+
+argv para input de valores no cópdigo ( \node.exe file.js arg ):
+
+(console.log(process.argv); console.log(process.argv[2]); console.log(5 + parseInt(process.argv[2]));)
+
+metodo common de exportação / importação de módulos:
+
+module.exports = {função, função, função}  /  const tal = require("arquivo.js")
+
+
