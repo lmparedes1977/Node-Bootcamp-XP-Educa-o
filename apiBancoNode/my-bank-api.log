@@ -1,0 +1,9 @@
+2023-01-24T20:12:40.455Z - [my-bank-api] - info : API Starded
+2023-01-24T20:13:29.666Z - [my-bank-api] - error : Conta Inexistente
+2023-01-24T20:19:39.650Z - [my-bank-api] - info : API Starded
+2023-01-24T20:19:51.813Z - [my-bank-api] - info : API Starded
+2023-01-24T20:19:59.052Z - [my-bank-api] - error : DELETE /accounts Conta Inexistente
+2023-01-24T20:21:48.583Z - [my-bank-api] - info : API Starded
+2023-01-24T20:22:06.029Z - [my-bank-api] - info : API Starded
+2023-01-24T20:22:53.733Z - [my-bank-api] - info : POST /account [object Object]
+2023-01-24T20:23:54.869Z - [my-bank-api] - info : API Starded

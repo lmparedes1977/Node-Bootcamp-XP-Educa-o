@@ -12,15 +12,15 @@ router.get('/menosModelos', (req, res) => {
 });
 
 router.get('/listaMaisModelos/:X', (req, res) => {
-  res.send(listaMaisModelos(X));
+  res.send(listaMaisModelos(req.params.X));
 });
 
 router.get('/listaMenosModelos/:X', (req, res) => {
-  res.send(listaMenosModelos(X));
+  res.send(listaMenosModelos(req.params.X));
 });
 
 router.get('/listaModelos/:marca', (req, res) => {
-  res.send(listaModelos(marca));
+  res.send(listaModelos(req.params.marca));
 });
 
 async function maisModelos() {
