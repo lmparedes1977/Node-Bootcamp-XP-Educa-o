@@ -1,6 +1,9 @@
 import express from 'express';
 import accountsRouter from './routes/accounts.js';
 import { promises as fs } from 'fs';
+// import cors from 'cors';
+
+// app.use(cors());  // precisa instalar o cors (npm install cors)
 
 const app = express();
 app.use(express.json());

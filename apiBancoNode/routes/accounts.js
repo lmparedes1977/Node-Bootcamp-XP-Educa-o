@@ -81,6 +81,12 @@ router.put('/', async (req, res) => {
     let account = req.body;
     const data = JSON.parse(await fs.readFile(global.arq, next));
     const index = data.accounts.findIndex(acc => acc.id === account.id);
+    if (index < 0) {
+      throw new Error('Registro Não Encontrado.');
+    }
+    if (!account.id || !account.name || account.saldo == null) {
+      throw new Error('Nome e Saldo precisam ser preenchidos');
+    }
     data.accounts[index] = account;
     await fs.writeFile(global.arq, JSON.stringify(data, null, 2));
     res.send(account);
@@ -94,6 +100,12 @@ router.patch('/updateSaldo', async (req, res, next) => {
     let account = req.body;
     const data = JSON.parse(await fs.readFile(global.arq));
     const index = data.accounts.findIndex(acc => acc.id === account.id);
+    if (index < 0) {
+      throw new Error('Registro Não Encontrado.');
+    }
+    if (!account.id || account.saldo == null) {
+      throw new Error('Nome e Saldo precisam ser preenchidos');
+    }
     data.accounts[index].saldo = account.saldo;
     await fs.writeFile(global.arq, JSON.stringify(data, null, 2));
     res.send(account);
