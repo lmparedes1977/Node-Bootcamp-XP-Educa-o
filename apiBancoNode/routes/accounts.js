@@ -11,6 +11,7 @@ const myFormat = printf(({ level, timestamp, label, message }) => {
 });
 
 global.arq = 'accounts.json';
+
 global.logger = winston.createLogger({
   level: 'silly',
   transports: [
